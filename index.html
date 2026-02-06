@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Important Saturday Proposal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+      color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 15px;
+      max-width: 420px;
+      text-align: center;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    }
+    ul { text-align: left; }
+    button {
+      padding: 12px 20px;
+      margin: 10px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .yes { background-color: #ff6f91; color: white; }
+    .no { background-color: #ddd; }
+    #response { margin-top: 20px; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>🚨 Saturday Date Request 🚨</h1>
+    <p>Hello beautiful 👋</p>
+    <p>I am officially asking if you would like to go out with me this Saturday.</p>
+
+    <h3>🅱️ Possible B Activities:</h3>
+    <ul>
+      <li>🛍 Clothes shopping (you look amazing, I carry bags)</li>
+      <li>🧋 Boba / coffee breaks</li>
+      <li>🍳 Brunch</li>
+      <li>🍰 Dessert (mandatory)</li>
+    </ul>
+
+    <p><strong>So… will you go out with me?</strong></p>
+    <button class="yes" onclick="sayYes()">Yes 💕</button>
+    <button class="no" onclick="sayNo()">No 🙃</button>
+
+    <div id="response"></div>
+  </div>
+
+  <script>
+    function sayYes() {
+      document.getElementById("response").innerHTML =
+        "🎉 LET’S GO 🎉<br>Saturday is officially ours 💖";
+    }
+    function sayNo() {
+      document.getElementById("response").innerHTML =
+        "❌ ERROR 404 ❌<br>Option not supported 😌";
+    }
+  </script>
+</body>
+</html>
